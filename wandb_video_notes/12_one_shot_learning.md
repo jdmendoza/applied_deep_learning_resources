@@ -2,23 +2,23 @@
 [12. One-Shot Learning (2019) - YouTube](https://youtu.be/H4MPIWX6ftE)
 
 ## Video Notes
-* Used to classify things the neural network has never seen in training
+* One shot learning is used to classify things the neural network has never seen in training
 
-* Technique is known as one-shot, zero-shot or few shot if there are a couple examples
+* Technique is known as one-shot, zero-shot or few shot if there are a more examples
 
 * Big Idea: Rather than train on single instances of an object, train on pairs of objects i.e. are they the same thing?
 
-* This is done so that the classifier may be able to generalize on things outside of training data
+* This is done so that the classifier may  generalize to objects outside of training data
 
 * This approach can be used on video data, audio data, tons of different examples
 
-* The crux for this technique is the function make_pairs:  it iterates through the training data and randomly appends images. Each training sample is an array of two images with a label. If they same category make label 1, if different make it label 0
+* The crux for this technique is the function **make_pairs**:  it iterates through the training data and randomly appends images. Each training sample is a list of two images with a label. If the images are from the same category make the label 1, if they have different categories, make it label 0
 
-* Naive Approach: Use one dense layer per pair of images and concatenate. This is then fed to a dense layer which outputs a 0 or 1
+* Naive Approach: Use one dense layer per pair of images and concatenate network outputs. This is then fed to a dense layer which outputs a 0 or 1
 
 * Accuracy increases (better than random), but is not very good. Can use weight sharing!
 
-* Change: Flatten the images and concat in to a dense layer
+* Change: Flatten the images and concatenate. This is then fed into a dense layer
 
 * To improve further, we can use a siamese network - link below
 

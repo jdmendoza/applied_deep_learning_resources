@@ -4,19 +4,19 @@
 ## Video Notes
 * Arguably the field that got people interested in deep learning
 
-* Objective of the video is to classify people saying different words and try to detect which work is said
+* Objective of the project is to classify sound files as words
 
-* Take wavfiles -> apply transformation -> feed into neural networks
+* Approach: Take wavfiles -> apply transformation -> feed into neural networks
 
-* MFCC: Buckets of frequencies and time and converters wav files into images
+* MFCC for feature extractions. Roughly, it buckets of frequencies and time and converts wav files into images
 
 * Each sample is an image (audio spectrogram) with a label
 
 * Initial approach: flatten image and feed into dense network
 
-* Second: convolutional neural network, A 2d conv is reasonable since adjacent pixels have meaning and related. This approaches gets over 90% accuracy 
+* Second: convolutional neural network, A 2d conv is reasonable since adjacent pixels have meaning and are related. This approaches gets over 90% accuracy 
 
-* Third: Add additional 2d conv net,. This gives slightly better performance ~94% accuracy.
+* Third: Add additional 2d conv net. This gives slightly better performance ~94% accuracy.
 
 * Fourth: Dropout for overfitting, helps increase validation accuracy
 
@@ -29,6 +29,6 @@ Tutorial for algorithm that is used to turn sound data to features
 
 
 ## Video Feedback 
-* Video on wandb workflow, best practices, how to use the tool most efficiency in prototyping
+* Would like to see a video on wandb workflow, best practices, how to use the tool most efficiency in prototyping
 
 
